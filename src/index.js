@@ -14,6 +14,21 @@ function readJobDescription() {
     return fs.readFileSync(jobDescriptionFilePath, 'utf8');
 }
 
+function ensureDirectoriesExist() {
+    const outputDir = path.join('src', 'output');
+    const interviewDir = path.join('src', 'interview');
+
+    if (!fs.existsSync(outputDir)) {
+        fs.mkdirSync(outputDir, { recursive: true });
+        console.log(`Created directory: ${outputDir}`);
+    }
+
+    if (!fs.existsSync(interviewDir)) {
+        fs.mkdirSync(interviewDir, { recursive: true });
+        console.log(`Created directory: ${interviewDir}`);
+    }
+}
+
 async function generateTailoredResume(jobDescription) {
     const prompt = `
     You are a seasoned HR professional with expertise in crafting ATS-compliant resumes. 
@@ -122,6 +137,8 @@ async function saveResumeToPDF(htmlContent, filePath) {
 
 async function main() {
 
+    ensureDirectoriesExist();
+
     const companyName = await new Promise((resolve) => {
         process.stdout.write('Please enter the company name: ');
         process.stdin.on('data', (data) => {
@@ -147,8 +164,10 @@ async function main() {
             console.error('Failed to generate PDF.', error.message);
         }
 
-        await generateInterviewQuestions(htmlContent, companyName);
+        await generateInterviewQuestions(htmlContent, companyName);   
     }
+
+    process.exit(0);
 }
 
 main().catch(console.error);
