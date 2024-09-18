@@ -66,11 +66,12 @@ async function generateTailoredResume(jobDescription) {
 
 async function generateInterviewQuestions(resumeContent, companyName) {
     const prompt = `
-    Based on the following resume content, generate a list of potential interview questions that an interviewer might ask for a job at ${companyName}.
+    Based on the following resume content and my skills, generate a list of potential technical and HR interview questions that an interviewer might ask for a job at ${companyName}.
 
     Resume Content:
     ${resumeContent}
 
+    In addition to this also get the most commonly asked questions related to all the technologies mentioned in the resume.
     Please return a list of questions in plain text format.
     `;
 
@@ -112,10 +113,6 @@ async function saveResumeToPDF(htmlContent, filePath) {
 
     await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
     await page.setViewport({ width: 1440, height: 900 }); // Fit to one page
-    
-    if (!fs.existsSync(outputDir)){
-        fs.mkdirSync(outputDir);
-    }
 
     await page.pdf({ path: filePath, format: 'A4', printBackground: true });
 
@@ -147,7 +144,7 @@ async function main() {
         try {
             await saveResumeToPDF(htmlContent, pdfFilePath);
         } catch (error) {
-            console.error('Failed to generate PDF. Please check the HTML file:', error.message);
+            console.error('Failed to generate PDF.', error.message);
         }
 
         await generateInterviewQuestions(htmlContent, companyName);
