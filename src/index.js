@@ -46,8 +46,9 @@ async function generateTailoredResume(jobDescription) {
     `;
     
     try {
+        const model = process.env.OPENAI_MODEL;
         const response = await axios.post('https://api.openai.com/v1/chat/completions', {
-            model: 'gpt-4o-mini',
+            model: model,
             messages: [{ role: 'user', content: prompt }],
         }, {
             headers: {
