@@ -1,0 +1,149 @@
+personal_information:
+  name: Eshan Singh
+  surname: Parihar
+  date_of_birth: 30/09/1999
+  country: India
+  city: Bangalore
+  address: 
+  phone_prefix: "+91"
+  phone: "9453467991"
+  email: eshaan.singh.parihar@gmail.com
+  github: https://github.com/eshaansinghparihar
+  linkedin: https://www.linkedin.com/in/eshaansinghparihar/
+
+education_details:
+  - education_level: Bachelor of Engineering
+    institution: Visvesvaraya Technological University
+    field_of_study: Computer Science Engineering
+    final_evaluation_grade: 
+    start_date: "2018"
+    year_of_completion: "2022"
+
+experience_details:
+  - position: Associate Engineer
+    company: NTT Data
+    employment_period: 07/2022 - 09/2024
+    location: Bangalore
+    industry: Telecom
+    key_responsibilities:
+      - responsibility_1: Developed a cloud-native invoice generation application with ReactJS, increasing creation efficiency by 30% and document creation speed by 10% through Puppeteer integration. Streamlined PDF template selection and allowed custom invoice template saving, enhancing overall user productivity by 25%.
+      - responsibility_2: Developed a vacation synchronization application using TypeScript, Node.js, ExpressJS, OracleDB, Kafka, and RabbitMQ, improving data consistency and reducing discrepancies by 35%. Implemented scheduled scripts and API endpoints to address data inconsistencies, enhancing accuracy by 20% and reducing discrepancies by 45% through automated updates.
+      - responsibility_3: Developed a Node.js and ReactJS solution for credit risk analysis, boosting assessment efficiency by 25% and integrating it into the purchase process to ensure accurate evaluations for all users. Customized risk assessments to the transactional journey, reducing errors by 15% and cutting credit-related issues by 20%.
+    skills_acquired:
+      - Typescript
+      - JavaScript
+      - OracleDB
+      - MongoDB
+      - Node.js
+      - ExpressJS
+      - Unit Testing
+      - Jest
+      - Swagger
+      - AWS
+      - Docker
+      - Kubernetes
+      - Restful APIs
+      - SOAP
+      - Splunk
+      - CloudWatch
+      - Test Driven Development/TDD
+      - Micro-service architecture
+      - Postman
+      - Agile Methodologies
+      - Jira
+      - Confluence
+      - ReactJS
+      - React Native
+      - Socket
+      - Socket.io
+      - Bootstrap
+      - Material UI
+      - TailwindCSS
+      - Git
+      - Github
+
+  - position: Software Engineering Intern
+    company: Apisero Global Integration Solutions Private Limited
+    employment_period: 10/2021 - 07/2022
+    location: Bangalore
+    industry: 
+    key_responsibilities:
+      - responsibility_1: Created RESTful API services with Node.js and ExpressJS using Test-Driven Development (TDD), and developed modern APIs for a US-based client.
+      - responsibility_2: Enhanced React Native app visibility by 75% through seamless API integration using Redux and TailwindCSS.
+      - responsibility_3: Boosted project quality by coding critical modules and performing extensive unit testing within an Agile Scrum framework.
+    skills_acquired:
+      - Node.js
+      - ExpressJS
+      - React Native
+      - Communication
+      - Agile Methodologies
+
+projects:
+  - name: justGist
+    description: justGist is a MERN stack-based single-page application designed for a streamlined news reading and discussion experience. It allows users to read gists of news articles from trusted sources, search for specific articles, and manage their reading list by saving or deleting articles. Additionally, users can engage with the community by discussing articles and exploring questions in the Discussions section, making it a comprehensive platform for both news consumption and interactive dialogue.
+    link: https://justgist.onrender.com/
+
+  - name: Blabber
+    description: Blabber is a progressive single-page real-time peer-to-peer chat application built with React JS, React Hooks, Context, and Firebase. It allows users to chat, send images, and share GIFs in real-time. Users can view the last seen status of others, receive new notifications in the What's New section, and customize their profile with display pictures that can be set or removed at any time. Blabber combines interactive messaging with personalized features for a dynamic chat experience.
+    link: https://weblabber.netlify.app/
+
+  - name: Prolificity
+    description: An all-in-one web application crafted in Vanilla JavaScript, designed to enhance your daily productivity. Featuring a sleek Calculator for quick computations, a Notes tool for jotting down thoughts, a user-friendly To-Do List for task management, and a Dictionary for easy word lookup, Prolificity streamlines your everyday tasks in one convenient hub. Whether you're organizing your schedule or expanding your vocabulary, Prolificity is your essential companion for a more efficient life.
+    link: https://prolificity.netlify.app
+
+  - name: Cooking Simplified
+    description: A progressive single-page recipe suggestion web application built with ReactJS, designed for seamless use across devices of all sizes. The app allows users to receive tailored recipe suggestions based on available ingredients, search for specific recipes from a global database, and filter options based on nutrient limits. Users can also discover random recipe ideas and access detailed nutritional analyses, approximate costs, and wine pairing recommendations. Cooking Simplified makes meal planning easy and enjoyable, helping you create delicious dishes with confidence.
+    link: https://cookingsimplified.netlify.app/
+
+  - name: Good Travel
+    description: A user-friendly web application built with ReactJS to provide curated recommendations for your next travel destinations. Leveraging the OpenTripMap REST API, the app suggests attractions based on a user-defined radius and displays live traffic conditions around each destination on an interactive map. Users can easily open locations directly in Google Maps for quick navigation, making trip planning seamless and enjoyable. Good Travel is your go-to companion for exploring new adventures with ease and efficiency.
+    link: https://goodtravel.netlify.app/
+
+  - name: Expense Tracker
+    description: A progressive single-page web application developed using ReactJS and Google Firebase, designed to help users effectively manage their finances.The app allows users to easily add transactions and view their financial activities through daily, monthly, and overall transaction summaries. With built-in visualization tools, users can analyze their spending patterns, and the app also helps keep track of expected credit card bills for the month. Expense Tracker simplifies budgeting, empowering users to take control of their financial health.
+    link: https://cashmanager.netlify.app/
+
+achievements:
+  - name: Full Stack Technical Lead - Google Developer Student Clubs (CIT Bangalore)
+    description: Organized and led an intensive 10-day, 80-hour bootcamp focused on ReactJS and VanillaJS. Successfully managed and delivered eight frontend and one full-stack JavaScript projects, providing comprehensive sessions and hands-on experience for participants.
+
+certifications:
+  - name: Full-Stack Web Development with React Specialization by The Hong Kong University of Science and Technology
+    description: This specialization equips learners with comprehensive skills in full-stack web development. Participants will gain expertise in designing responsive web client applications using Bootstrap 4 and React, creating hybrid mobile applications with React Native, and building robust server-side applications using Node.js, Express, and MongoDB. Through a series of four focused courses, you will develop the ability to construct dynamic, user-friendly web applications that leverage modern frameworks and tools, preparing you for a successful career in web development.
+  - name: Server-Side Development with Node.js, Express, and MongoDB by The Hong Kong University of Science and Technology
+    description: This course provides a comprehensive introduction to server-side development using Node.js, Express, and MongoDB. Participants will learn how to build scalable and efficient web applications by mastering key concepts of server-side programming, RESTful API design, and database integration. Through practical assignments and projects, you will gain hands-on experience in developing robust backend systems, equipping you with essential skills for a career in full-stack development. This course is offered by The Hong Kong University of Science and Technology, ensuring high-quality instruction and industry relevance.
+  - name: Machine Learning with Python by IBM
+    description: Embark on your Machine Learning journey with this hands-on course tailored for aspiring data scientists and ML enthusiasts. Starting with foundational concepts like supervised and unsupervised learning, you'll explore regression techniques and classification methods such as K-Nearest Neighbors, decision trees, and Logistic Regression, alongside clustering techniques like k-means and DBSCAN. Through practical labs using Python libraries like SciPy and scikit-learn, you'll apply your knowledge in real-world scenarios, culminating in a capstone project where you'll build and evaluate various Machine Learning models. By the end, you'll gain job-ready skills and a certificate to showcase your expertise in this dynamic field.
+
+languages:
+  - language: English
+    proficiency: Professional
+
+
+availability:
+  notice_period: Immediate
+
+self_identification:
+  gender: Male
+  pronouns: "He/Him" 
+  veteran: "No"
+  disability: "No"
+  ethnicity: "Asian"
+
+legal_authorization:
+  eu_work_authorization: "No"
+  us_work_authorization: "No"
+  requires_us_visa: "Yes"
+  requires_us_sponsorship: "Yes"
+  requires_eu_visa: "Yes"
+  legally_allowed_to_work_in_eu: "Yes"
+  legally_allowed_to_work_in_us: "Yes"
+  requires_eu_sponsorship: "Yes"
+
+work_preferences:
+  remote_work: "Yes"
+  in_person_work: "Yes"
+  open_to_relocation: "Yes"
+  willing_to_complete_assessments: "Yes"
+  willing_to_undergo_drug_tests: "Yes"
+  willing_to_undergo_background_checks: "Yes"
