@@ -74,6 +74,9 @@ To get started with the Resume Generator, follow these steps:
       github: "[Your GitHub Profile URL]"
       linkedin: "[Your LinkedIn Profile URL]"
     
+    summary:
+      - description: [Your summary]
+    
     education_details:
       - education_level: "[Your Education Level]"
         institution: "[Your Institution]"

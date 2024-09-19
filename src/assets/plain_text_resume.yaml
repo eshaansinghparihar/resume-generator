@@ -11,6 +11,9 @@ personal_information:
   github: https://github.com/eshaansinghparihar
   linkedin: https://www.linkedin.com/in/eshaansinghparihar/
 
+summary:
+  -description: Results-driven Backend Developer with 3 years of experience and a proven track record in transforming digital customer service platforms and delivering robust cloud-native applications. Skilled in modernizing legacy systems using Test-Driven Development (TDD), developing scalable digital solutions and end web applications with TypeScript and Node.js, and integrating systems for enhanced functionality on cloud platforms like AWS. Proficient in designing RESTful APIs and leveraging observability tools such as Splunk, AWS CloudWatch and GitHub Actions. Experienced in maintaining micro-service architecture in Kubernetes Pods, utilizing AWS ECR Registry, and driving efficiency with reusable features in agile environments using Jira.
+
 education_details:
   - education_level: Bachelor of Engineering
     institution: Visvesvaraya Technological University
