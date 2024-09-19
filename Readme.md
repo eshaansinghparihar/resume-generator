@@ -57,7 +57,7 @@ To get started with the Resume Generator, follow these steps:
  
 ## Configuration
 
- Copy and paste the below attached plain_text_resume.yaml file and modify it with your information. For example refer: [Resume Example](https://github.com/eshaansinghparihar/resume-generator/blob/main/src/assets/plain_text_resume.yaml)
+ Copy and paste the below attached plain_text_resume.yaml file and modify it with your information. For example refer: [Resume Example](https://github.com/eshaansinghparihar/resume-generator/blob/main/src/config/plain_text_resume.yaml)
 
     ### plain_text_resume.yaml
     ```bash
