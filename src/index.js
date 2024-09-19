@@ -45,7 +45,7 @@ async function generateTailoredResume(jobDescription) {
     const prompt = `
     You are a seasoned HR professional with expertise in crafting ATS-compliant resumes. 
     Your task is to create a tailored resume based on the following job description and my resume data. 
-    Focus on highlighting relevant skills and experiences that align with the job description, ensuring that the final output is optimized for Applicant Tracking Systems (ATS).
+    Focus on highlighting relevant skills, experiences and soft skills that align with the job description, ensuring that the final output is optimized for Applicant Tracking Systems (ATS).
 
     Job Description:
     "${jobDescription}"
