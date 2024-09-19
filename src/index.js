@@ -17,6 +17,8 @@ function readJobDescription() {
 function ensureDirectoriesExist() {
     const outputDir = path.join('src', 'output');
     const interviewDir = path.join('src', 'interview');
+    const htmlResumeDir = path.join(outputDir, 'htmlResume');
+    const pdfResumeDir = path.join(outputDir, 'pdfResume')
 
     if (!fs.existsSync(outputDir)) {
         fs.mkdirSync(outputDir, { recursive: true });
@@ -26,6 +28,16 @@ function ensureDirectoriesExist() {
     if (!fs.existsSync(interviewDir)) {
         fs.mkdirSync(interviewDir, { recursive: true });
         console.log(`Created directory: ${interviewDir}`);
+    }
+
+    if (!fs.existsSync(htmlResumeDir)) {
+        fs.mkdirSync(htmlResumeDir, { recursive: true });
+        console.log(`Created directory: ${htmlResumeDir}`);
+    }
+
+    if (!fs.existsSync(pdfResumeDir)) {
+        fs.mkdirSync(pdfResumeDir, { recursive: true });
+        console.log(`Created directory: ${pdfResumeDir}`);
     }
 }
 
@@ -55,6 +67,7 @@ async function generateTailoredResume(jobDescription) {
     Use the following styles:
     - Headings: 10pt
     - Body text: 9pt
+    - Body margin: 20px
     - Ensure that the resume fits a single page and does not require scrolling.
 
     Make sure to use clear and concise language, include relevant keywords from the job description, and ensure proper formatting for ATS compatibility.The total word count should be less than 700 words.
@@ -155,15 +168,16 @@ async function main() {
         console.log('Generated HTML Resume:\n', htmlContent);
         
         // Save HTML to file
-        const htmlFilePath = path.join('src/output', `${companyName}_Resume.html`);
+        const htmlFilePath = path.join('src/output/htmlResume', `${companyName}_Resume.html`);
         await saveHTMLToFile(htmlContent, htmlFilePath);
         
         // Attempt to save as PDF
-        const pdfFilePath = path.join('src/output', `${companyName}_Resume.pdf`);
+        const pdfFilePath = path.join('src/output/pdfResume', `${companyName}_Resume.pdf`);
         try {
             await saveResumeToPDF(htmlContent, pdfFilePath);
         } catch (error) {
-            console.error('Failed to generate PDF.', error.message);
+            console.log('Failed to generate PDF.');
+            console.error(error);
         }
 
         await generateInterviewQuestions(htmlContent, companyName);   

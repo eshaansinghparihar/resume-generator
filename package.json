@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "createResume" : "node src/index.js"
+    "createResume": "node src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,7 @@
     "axios": "^1.7.7",
     "dotenv": "^16.4.5",
     "pdf-lib": "^1.17.1",
-    "puppeteer": "^23.3.1",
+    "puppeteer": "^23.4.0",
     "puppeteer-core": "^23.3.1",
     "yamljs": "^0.3.0"
   }
