@@ -9,9 +9,7 @@ A powerful Resume Generator application built with Node.js and Puppeteer that ta
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
-<!--- [How It Works](#how-it-works)-->
-<!--- [Contributing](#contributing)-->
-- [License](#license)
+- [License](#licenses)
 - [Disclaimer](#disclaimer)
 
 ## Features
